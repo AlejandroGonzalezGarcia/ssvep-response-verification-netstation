@@ -1,0 +1,2 @@
+-r requirements.txt
+egi-pynetstation==2.1.0

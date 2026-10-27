@@ -1,0 +1,49 @@
+display:
+  screen_index: 1
+  resolution_px: [1920, 1080]
+  fullscreen: true
+  background_rgb: [0.5, 0.5, 0.5]
+calibration:
+  width_cm: 58.0
+  height_cm: 33.0
+  viewing_distance_cm: 57.6
+  refresh_rate_hz: 60.0
+design:
+  blocks: 1
+  trials_per_block: 10
+timing:
+  preparation_s: 3.0
+  prestimulation_s: 1.5
+  stimulation_s: 10.0
+  iti_s: 1.0
+target:
+  center_deg: [0.0, 0.0]
+  diameter_deg: 3.0
+  color_rgb: [1.0, 1.0, 1.0]
+  frequency_hz: 15.0
+  waveform: square
+  opacity_min: 0.0
+  opacity_max: 1.0
+fixation:
+  center_deg: [0.0, 0.0]
+  diameter_deg: 0.2
+  color_rgb: [1.0, 0.0, 0.0]
+diodes:
+  onset:
+    position: top_left
+    size_deg: [2.0, 2.0]
+    inset_px: 0
+    pulse_s: 0.1
+  offset:
+    position: bottom_left
+    size_deg: [2.0, 2.0]
+    inset_px: 0
+    pulse_s: 0.1
+netstation:
+  eci_ip: 10.10.10.42
+  port: 55513
+  ntp_ip: 10.10.10.51
+  queue_capacity: 4096
+  operation_timeout_s: 15.0
+output:
+  root: data/results
